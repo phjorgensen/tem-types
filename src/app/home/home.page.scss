@@ -1,27 +1,47 @@
-#container {
-  text-align: center;
+.header {
+  .weak {
+    text-align: left;
+  }
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  .header-text {
+    text-align: center;
+  }
+
+  .strong {
+    text-align: right;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.type-card {
+  border: 1px solid black;
+  margin: .4rem .2rem;
+  border-radius: 2px;
+  padding: 0;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  .display-button {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+  }
 
-  color: #8c8c8c;
+  .strong {
+    background-color: green;
+  }
 
-  margin: 0;
-}
+  .weak {
+    background-color: red;
+  }
 
-#container a {
-  text-decoration: none;
+  .type-info {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .comparison-list {
+    border-top: 1px solid black;
+
+    &-item__strong {
+      text-align: right;
+    }
+  }
 }

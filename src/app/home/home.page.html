@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid class="header">
+    <ion-row>
+      <ion-col size="2" class="weak">Weak</ion-col>
+      <ion-col class="header-text">Type</ion-col>
+      <ion-col size="2" class="strong">Strong</ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid *ngFor="let type of types" class="type-card">
+    <ion-row class="ion-align-items-center">
+      <ion-col size="2" (click)="display('WEAK', type)" class="display-button weak">
+        <ion-icon name="close-circle"></ion-icon>
+      </ion-col>
+
+      <ion-col class="type-info">{{ type.name }}</ion-col>
+
+      <ion-col size="2" (click)="display('STRONG', type)" class="display-button strong">
+        <ion-icon name="checkmark-circle"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="type.displayStrong && type.strongAgainst.length" class="comparison-list">
+      <ion-col size="12" *ngFor="let strong of type.strongAgainst" class="comparison-list-item comparison-list-item__strong">{{ strong }}</ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="type.displayWeak && type.weakAgainst.length" class="comparison-list">
+      <ion-col size="12" *ngFor="let weak of type.weakAgainst" class="comparison-list-item comparison-list-item__weak">{{ weak }}</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
