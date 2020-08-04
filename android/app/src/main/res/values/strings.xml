@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">TemTypes</string>
+    <string name="title_activity_main">TemTypes</string>
+    <string name="package_name">no.xuntari.temtypes</string>
+    <string name="custom_url_scheme">no.xuntari.temtypes</string>
+</resources>
