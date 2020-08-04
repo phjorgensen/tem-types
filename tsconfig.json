@@ -14,7 +14,12 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@enums/*": ["src/app/enums/*"],
+      "@models/*": ["src/app/models/*"],
+      "@services/*": ["src/app/services/*"],
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
