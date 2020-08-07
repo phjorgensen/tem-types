@@ -3,13 +3,17 @@ import { DisplayKind } from '@enums/display-kind.enum';
 
 export class Comparison {
   public name: Type;
+  public icon: string;
+  public colour: string;
   public strongAgainst: Type[];
   public weakAgainst: Type[];
   public displayStrong: boolean;
   public displayWeak: boolean;
 
-  constructor(name: Type, strongAgainst: Type[] = [], weakAgainst: Type[] = []) {
+  constructor(name: Type, icon: string, colour: string, strongAgainst: Type[] = [], weakAgainst: Type[] = []) {
     this.name = name;
+    this.icon = icon;
+    this.colour = colour;
     this.strongAgainst = strongAgainst;
     this.weakAgainst = weakAgainst;
     this.displayStrong = false;
