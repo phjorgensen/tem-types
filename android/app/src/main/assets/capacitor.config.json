@@ -9,5 +9,6 @@
       "launchShowDuration": 0
     }
   },
+  "windowsAndroidStudioPath": "E:\\Programs\\Android Studio\\bin\\studio64.exe",
   "cordova": {}
 }
