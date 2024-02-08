@@ -1,7 +1,0 @@
-{
-  "name": "tem-types",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
