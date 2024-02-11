@@ -5,4 +5,8 @@
   export { classes as class };
 </script>
 
-<img src="/assets/icons/{name}.svg" alt="{name} icon" class={classes} />
+<img
+  src="/tem-types/assets/icons/{name}.svg"
+  alt="{name} icon"
+  class={classes}
+/>

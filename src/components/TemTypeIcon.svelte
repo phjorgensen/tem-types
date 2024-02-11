@@ -5,7 +5,7 @@
 <div class="bg-white rounded-lg shadow p-2" title={icon}>
   {#if icon}
     <img
-      src="/assets/tem-types/{icon}.png"
+      src="/tem-types/assets/tem-types/{icon}.png"
       class="w-12 h-12"
       alt="Tem type {icon}"
     />

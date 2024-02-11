@@ -10,7 +10,7 @@
 
 <section class="flex flex-col gap-6 p-6">
   <div class="flex items-center justify-center">
-    <img src="/assets/logo.png" class="w-1/4" />
+    <img src="/tem-types/assets/logo.png" class="w-1/4" alt="temtem logo" />
   </div>
 
   <ul class="flex flex-col gap-4">
