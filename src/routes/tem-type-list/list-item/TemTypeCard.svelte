@@ -7,12 +7,12 @@
 
 <li>
   <button
-    class="w-full rounded shadow"
+    class="w-full border rounded-xl shadow"
     style="background-color: {temType.colour};"
     on:click
   >
-    <div class="flex items-center justify-between gap-2 px-4 py-2">
-      <p>{temType.name}</p>
+    <div class="flex items-center justify-between gap-2 pl-4 pr-2 py-2">
+      <p class="font-bold">{temType.name}</p>
       <TemTypeIcon icon={temType.icon} />
     </div>
   </button>

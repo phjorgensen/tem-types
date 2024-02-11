@@ -13,7 +13,7 @@
     <img src="/assets/logo.png" class="w-1/4" />
   </div>
 
-  <ul class="flex flex-col gap-4 p-6">
+  <ul class="flex flex-col gap-4">
     {#each temTypes as temType}
       <TemTypeCard {temType} on:click={() => goToTemTypeDetails(temType.id)} />
     {/each}

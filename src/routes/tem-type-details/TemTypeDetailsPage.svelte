@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
   import {
     temTypeById,
-    getTemTypeModifiers,
     type TemType,
     type TemTypeDefinition,
   } from "../tem-type-list/list-item/types";
@@ -28,7 +27,7 @@
       backButton
     />
 
-    <div class="grid grid-cols-2 grid-rows-2">
+    <div class="grid grid-cols-2 grid-rows-2 gap-2 p-4">
       <div class="flex items-center gap-2 p-2">
         <TemTypeModifierTag direction="deal" modifier="2x" />
 
