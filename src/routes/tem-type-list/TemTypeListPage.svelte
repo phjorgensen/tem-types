@@ -2,15 +2,16 @@
   import { temTypes } from "./list-item/types";
   import { push } from "svelte-spa-router";
   import TemTypeCard from "./list-item/TemTypeCard.svelte";
-  import PageHeader from "../../components/PageHeader.svelte";
 
   function goToTemTypeDetails(id: string): void {
     push(`/${id}/details`);
   }
 </script>
 
-<section>
-  <PageHeader text="TemTypes" />
+<section class="flex flex-col gap-6 p-6">
+  <div class="flex items-center justify-center">
+    <img src="/assets/logo.png" class="w-1/4" />
+  </div>
 
   <ul class="flex flex-col gap-4 p-6">
     {#each temTypes as temType}
