@@ -3,6 +3,6 @@
   import Router from "svelte-spa-router";
 </script>
 
-<main class="w-full h-full bg-gray-400">
+<main class="w-full h-full bg-[#FAF5E9]">
   <Router {routes} />
 </main>
